@@ -1,0 +1,9 @@
+@use "./../base/mediaquery" as md;
+.header-under {
+  width: 100%;
+  padding-top: 74px;
+
+  @include md.sp {
+    padding-top: 62px;
+  }
+}

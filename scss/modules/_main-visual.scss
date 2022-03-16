@@ -1,0 +1,93 @@
+@use "./../base/mediaquery" as md;
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  36% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+.main-visual {
+  width: 100%;
+  height: calc(60.5rem + ((1vw - 7.68px) * 23.0198));
+
+  @include md.sp {
+    height: 500px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(60.5rem + ((1vw - 7.68px) * 23.0198));
+
+    @include md.sp {
+      height: 500px;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(60.5rem + ((1vw - 7.68px) * 23.0198));
+    opacity: 0;
+    animation: anime 30s 0s infinite;
+    object-fit: cover;
+    object-position: center center;
+
+    &:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 10s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 20s;
+    }
+  }
+  &__body {
+    position: absolute;
+    top: calc(30.5rem + ((1vw - 7.68px) * 23.0198));
+    right: 27%;
+    z-index: 2;
+    height: 380px;
+    text-align: left;
+    transform: translateY(-50%);
+
+    @include md.sp {
+      top: 280px;
+      right: 50%;
+      transform: translateY(-50%) translateX(50%);
+    }
+  }
+  &__text {
+    color: #fff;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    font-size: 4rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+
+    @include md.sp {
+      font-weight: 400;
+    }
+  }
+
+  &--vertical-writing {
+    writing-mode: vertical-rl;
+  }
+}

@@ -1,0 +1,23 @@
+@use "./../base/mediaquery" as md;
+.border-area {
+  margin-bottom: 96.5px;
+  &__inner {
+    padding: 90.5px 10px 74px 10px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  &__body {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    margin: 0 0 40.5px 0;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.6rem;
+    font-family: "Yu Mincho";
+    line-height: 1.2;
+  }
+}

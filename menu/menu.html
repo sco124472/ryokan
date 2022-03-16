@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>お料理－架空温泉 | 温海温泉旅館【公式サイト】
+  </title>
+  <meta name="title" content="架空温泉 | 温海温泉旅館【公式サイト】">
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、架空温泉。
+        伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://in-portfoliosite.com/ryokan/">
+  <meta property="og:title" content="架空温泉 | 温海温泉旅館【公式サイト】">
+  <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、架空温泉。
+          伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <meta property="og:image" content="https://in-portfoliosite.com/ryokan/img/ryokan.jpeg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://in-portfoliosite.com/ryokan/">
+  <meta property="twitter:title" content="架空温泉 | 温海温泉旅館【公式サイト】">
+  <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、架空温泉。
+          伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <meta property="twitter:image" content="https://in-portfoliosite.com/ryokan/img/ryokan.jpeg">
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="./../img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./../img/apple-touch-icon.png?ver=48dacf5ec8e58423">
+  <link rel="icon" type="image/png" href="./../img/android-touch-icon.png?ver=48dacf5ec8e58423">
+
+  <!--font awesome-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!--flatpickr-->
+  <link rel="stylesheet" href="//unpkg.com/flatpickr/dist/flatpickr.min.css">
+  <script src="//unpkg.com/flatpickr"></script>
+
+  <!--css-wipe.css-->
+  <link rel="stylesheet" href="./../css/riset.css">
+
+  <!--AOS.css-->
+  <link rel="stylesheet" href="./../css/aos.css">
+
+  <link rel="stylesheet" href="./../css/style.css">
+
+  <!--インデックス最適化-->
+  <meta name="robots" content="noindex">
+
+</head>
+
+<body>
+  <header class="header header--lighter">
+    <div class="header__inner">
+      <div class="header__left-wrapper">
+        <a href="./../index.html" class="header__logo-wrapper site-title site-title--horizontal">
+          <figure class="site-title__logo-wrapper"><img src="./../img/sakura-icon-black.png" alt="桜のアイコン画像"
+              class="site-title__logo-mark"></figure>
+          <h1 class="site-title__title">
+            石井花壇
+          </h1>
+        </a>
+        <nav class="header__nav">
+          <ul class="horizontal-nav">
+            <li class="horizontal-nav__item hide"><a href="./../index.html" class="horizontal-nav__link">トップ</a>
+            </li>
+            <li class="horizontal-nav__item hide"><a href="./../oheya/oheya.html" class="horizontal-nav__link">お部屋</a>
+            </li>
+            <li class="horizontal-nav__item hide"><a href="./../onsen/onsen.html" class="horizontal-nav__link">温泉</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right-wrapper">
+        <div class="hamburger hamburger--color-black hide">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </div>
+        <button class="before-icon-btn before-icon-btn--download" href="#">宿泊予約</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="globalMenuSp">
+    <ul class="globalMenuSp__wrapper" id="globalMenuSp">
+      <li class="globalMenuSp__item">
+        <a href="./../index.html" class="globalMenuSp__link">トップ</a>
+      </li>
+      <li class="globalMenuSp__item">
+        <a href="./../oheya/oheya.html" class="globalMenuSp__link">お部屋</a>
+      </li>
+      <li class="globalMenuSp__item">
+        <a href="./../onsen/onsen.html" class="globalMenuSp__link">温泉</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="modal hide">
+    <div class="modal__inner">
+      <figure class="modal__close-btn-wrapper"><img src="./../img/close.png?ver=25f542f97b72f9c5?ver=0fffd1d72f3d8d4e"
+          alt="閉じるボタン" class="modal__close-btn"></figure>
+      <div class="modal__body">
+        <h4 class="modal__title">宿泊予約</h4>
+        <form action="" method="get" class="modal__form">
+          <label for="your-name">
+            <p class="modal__your-name-head">お名前</p>
+          </label>
+          <input type="text" name="your-name" class="modal__your-name-text" id="your-name" placeholder=" 例:石井正悟">
+          <label for="mail">
+            <p class="modal__mail-address-head">メールアドレス</p>
+          </label>
+          <input type="text" name="reservation" class="modal__mail-address-text" id="mail"
+            placeholder="例:Example@example.com">
+          <label for="plan">
+            <p class="modal__choose-plan-head">ご希望プラン（空いているプランのみ表示されます） </p>
+          </label>
+          <select name="person-information" id="plan" class="modal__choose-plan-list">
+            <option value="" selected disabled class="modal__choose-plan-item">プランを選択してください</option>
+            <option value="food-plan" class="modal__choose-plan-item">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+            </option>
+            <option value="stay-overnight-plan" class="modal__choose-plan-item">②平日に優雅に楽しむ、特別宿泊プラン
+            </option>
+            <option value="family-plan" class="modal__choose-plan-item">③絶景貸切露天と個室会席を満喫できるファミリープラン
+            </option>
+          </select>
+          <p class="modal__select-day-head">日時選択</p>
+          <input class="modal__select-day" id="myInput" type="text" placeholder="日時を選択してください" readonly="readonly">
+          <div class="modal__btn-wrapper">
+            <input type="submit" value="送信する" class="modal__btn btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-under">
+    <div class="sub-fv" id="sub-visual" style="background-image: url(./../img/menu-header.jpg);">
+      <div class="sub-fv__inner">
+        <div class="sub-fv__body">
+          <h2 class="sub-fv__title">お料理</h2>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="breadcrumb">
+        <a href="../index.html" class="breadcrumb__top">トップ</a>
+        <p class="breadcrumb__greater">></p>
+        <p class="breadcrumb__sub">お料理</p>
+      </div>
+    </div>
+
+    <main>
+      <div class="content">
+        <p class="content__lead" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="150" data-aos-once="true">
+          地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br>
+          大将の技が光る「熱海料理」<br>
+          四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+        </p>
+      </div>
+      <div class="content content--sp-fullscreen">
+        <div class="details">
+          <div class="shift-img-media">
+            <div class="shift-img-media__inner">
+              <figure class="shift-img-media__img-wrapper">
+                <img src="../img/menu01.jpg" class="shift-img-media__img" alt="懐石料理のイメージ画像">
+              </figure>
+              <div class="shift-img-media__body">
+                <h3 class="shift-img-media__title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">地元食材にこだわった会席料理</h3>
+                <p class="shift-img-media__text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br class="sp_none">
+                  旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br class="sp_none">
+                  四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="shift-img-media shift-img-media--reverse">
+            <div class="shift-img-media__inner">
+              <figure class="shift-img-media__img-wrapper">
+                <img src="../img/menu02.jpg" class="shift-img-media__img" alt="料理で使用している魚のイメージ画像">
+              </figure>
+              <div class="shift-img-media__body">
+                <h3 class="shift-img-media__title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">熱海の漁港で目利きの品を</h3>
+                <p class="shift-img-media__text" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br class="sp_none">
+                  熱海の魚市場でその日のうちに仕入れたものを使用しております。<br class="sp_none">
+                  日本海の宝玉を十分にお楽しみください。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="shift-img-media">
+            <div class="shift-img-media__inner">
+              <figure class="shift-img-media__img-wrapper">
+                <img src="../img/menu03.jpg" class="shift-img-media__img" alt="料理風景の画像">
+              </figure>
+              <div class="shift-img-media__body">
+                <h3 class="shift-img-media__title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">食材が一流、職人も一流</h3>
+                <p class="shift-img-media__text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000"
+                  data-aos-easing="
+          ease-in-sine" data-aos-once="true">石井花壇の料理人は料亭で20年経験を積んだものばかり。<br class="sp_none">
+                  その時の最も旬な食材を、最高の調理でお届けします。<br class="sp_none">
+                  また、お料理への細かいご要望にもお答えできますので、<br class="sp_none">
+                  お気軽にお申し付けください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer" style="background-image: url(./../img/bg3.jpg?ver=25f542f97b72f9c5);">
+    <div class="footer__inner">
+      <nav class="footer__vertical-nav">
+        <ul class="vertical-nav">
+          <li class="vertical-nav__item"><a href="./../index.html" class="vertical-nav__link">トップ</a></li>
+          <li class="vertical-nav__item"><a href="./../oheya/oheya.html" class="vertical-nav__link">お部屋</a></li>
+          <li class="vertical-nav__item"><a href="./../onsen/onsen.html" class="vertical-nav__link">温泉</a></li>
+        </ul>
+      </nav>
+      <div class="footer__title">
+        <a href="./../index.html" class="site-title site-title--dark">
+          <figure class="site-title__logo-wrapper"><img
+              src="./../img/sakura-icon-black.png?ver=cdeb9cd81f381680?ver=25f542f97b72f9c5?ver=0fffd1d72f3d8d4e"
+              alt="桜のアイコン画像" class="site-title__logo-mark"></figure>
+          <h1 class="site-title__title">
+            石井花壇
+          </h1>
+        </a>
+      </div>
+      <div class="footer__text-wrapper">
+        <p class="footer__text">〒000-0000</p>
+        <p class="footer__text">山形県鶴岡市xxxxxxxxxx</p>
+      </div>
+      <div class="footer__text-wrapper">
+        <p class="footer__text">TEL/FAX</p>
+        <p class="footer__text">000-0000-0000/00-0000-0000</p>
+      </div>
+    </div>
+    <div class="footer__copy-right-wrapper">
+      <p class="footer__copy-right">Copyright &copy; 石井花壇 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- flatpickr-->
+  <div class="flatpickr-calendar rangeMode animate" tabindex="-1">
+    <div class="flatpickr-months"><span class="flatpickr-prev-month flatpickr-disabled"><svg version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+          <g></g>
+          <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path>
+        </svg></span>
+      <div class="flatpickr-month">
+        <div class="flatpickr-current-month"><select class="flatpickr-monthDropdown-months" aria-label="Month"
+            tabindex="-1">
+            <option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">March</option>
+            <option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">April</option>
+            <option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">May</option>
+            <option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">June</option>
+            <option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">July</option>
+            <option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">August</option>
+            <option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">September</option>
+            <option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">October</option>
+            <option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">November</option>
+            <option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">December</option>
+          </select>
+          <div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"
+              min="2022"><span class="arrowUp"></span><span class="arrowDown"></span></div>
+        </div>
+      </div><span class="flatpickr-next-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+          <g></g>
+          <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path>
+        </svg></span>
+    </div>
+    <div class="flatpickr-innerContainer">
+      <div class="flatpickr-rContainer">
+        <div class="flatpickr-weekdays">
+          <div class="flatpickr-weekdaycontainer">
+            <span class="flatpickr-weekday">
+              Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span
+              class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span
+              class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+            </span>
+          </div>
+        </div>
+        <div class="flatpickr-days" tabindex="-1">
+          <div class="dayContainer"><span class="flatpickr-day prevMonthDay flatpickr-disabled"
+              aria-label="February 27, 2022">27</span><span class="flatpickr-day prevMonthDay flatpickr-disabled"
+              aria-label="February 28, 2022">28</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 1, 2022">1</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 2, 2022">2</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 3, 2022">3</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 4, 2022">4</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 5, 2022">5</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 6, 2022">6</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 7, 2022">7</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 8, 2022">8</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 9, 2022">9</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 10, 2022">10</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 11, 2022">11</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 12, 2022">12</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 13, 2022">13</span><span class="flatpickr-day flatpickr-disabled"
+              aria-label="March 14, 2022">14</span><span class="flatpickr-day today" aria-label="March 15, 2022"
+              aria-current="date" tabindex="-1">15</span><span class="flatpickr-day" aria-label="March 16, 2022"
+              tabindex="-1">16</span><span class="flatpickr-day" aria-label="March 17, 2022"
+              tabindex="-1">17</span><span class="flatpickr-day" aria-label="March 18, 2022"
+              tabindex="-1">18</span><span class="flatpickr-day" aria-label="March 19, 2022"
+              tabindex="-1">19</span><span class="flatpickr-day" aria-label="March 20, 2022"
+              tabindex="-1">20</span><span class="flatpickr-day" aria-label="March 21, 2022"
+              tabindex="-1">21</span><span class="flatpickr-day" aria-label="March 22, 2022"
+              tabindex="-1">22</span><span class="flatpickr-day" aria-label="March 23, 2022"
+              tabindex="-1">23</span><span class="flatpickr-day" aria-label="March 24, 2022"
+              tabindex="-1">24</span><span class="flatpickr-day" aria-label="March 25, 2022"
+              tabindex="-1">25</span><span class="flatpickr-day" aria-label="March 26, 2022"
+              tabindex="-1">26</span><span class="flatpickr-day" aria-label="March 27, 2022"
+              tabindex="-1">27</span><span class="flatpickr-day" aria-label="March 28, 2022"
+              tabindex="-1">28</span><span class="flatpickr-day" aria-label="March 29, 2022"
+              tabindex="-1">29</span><span class="flatpickr-day" aria-label="March 30, 2022"
+              tabindex="-1">30</span><span class="flatpickr-day" aria-label="March 31, 2022"
+              tabindex="-1">31</span><span class="flatpickr-day nextMonthDay" aria-label="April 1, 2022"
+              tabindex="-1">1</span><span class="flatpickr-day nextMonthDay" aria-label="April 2, 2022"
+              tabindex="-1">2</span><span class="flatpickr-day nextMonthDay" aria-label="April 3, 2022"
+              tabindex="-1">3</span><span class="flatpickr-day nextMonthDay" aria-label="April 4, 2022"
+              tabindex="-1">4</span><span class="flatpickr-day nextMonthDay" aria-label="April 5, 2022"
+              tabindex="-1">5</span><span class="flatpickr-day nextMonthDay" aria-label="April 6, 2022"
+              tabindex="-1">6</span><span class="flatpickr-day nextMonthDay" aria-label="April 7, 2022"
+              tabindex="-1">7</span><span class="flatpickr-day nextMonthDay" aria-label="April 8, 2022"
+              tabindex="-1">8</span><span class="flatpickr-day nextMonthDay" aria-label="April 9, 2022"
+              tabindex="-1">9</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--flatpickrの日本語の言語ファイル-->
+  <script src="//unpkg.com/flatpickr/dist/l10n/ja.js"></script>
+  <!--jquery-->
+  <script src="./../js/jquery-3.6.0.min.js"></script>
+  <!--AOS.js-->
+  <script src="./../js/aos.js"></script>
+  <!--全ページ共通-->
+  <script src="./../js/main.js" defer></script>
+</body>
+
+</html>

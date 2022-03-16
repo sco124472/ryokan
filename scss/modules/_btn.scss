@@ -1,0 +1,30 @@
+@use "./../base/mediaquery" as md;
+.btn {
+  display: inline-block;
+  max-width: 100%;
+  width: 200px;
+  padding: 10px 11px 8px 11px;
+  border: 1px solid #707070;
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: "Yu Mincho";
+  line-height: 2;
+
+  @include md.sp {
+    width: 150px;
+    padding: 7px 6px 5px 6px;
+    border-color: #fff;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #707070;
+    opacity: 0.8;
+  }
+}

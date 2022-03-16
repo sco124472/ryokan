@@ -1,0 +1,151 @@
+@use "./../base/mediaquery" as md;
+
+.shift-img-media {
+  width: 100%;
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    @include md.sp {
+      position: relative;
+      height: 250px;
+    }
+  }
+  &__img-wrapper {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 525px;
+
+    @include md.tab {
+      width: 42.5vw;
+    }
+
+    @include md.sp {
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: block;
+        width: 100%;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  &__img {
+    @include md.sp {
+      height: 250px;
+    }
+
+    object-fit: cover;
+  }
+
+  &__body {
+    flex: 1;
+    height: 381px;
+    margin-top: 57px;
+    margin-left: -90px;
+    padding-top: 55px;
+    padding-right: 30px;
+    padding-left: 160px;
+    background-image: url("../img/bg.jpg");
+
+    @include md.tab {
+      height: 331px;
+    }
+
+    @include md.sp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 4;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 20px;
+      background-image: none;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 46px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2.4rem;
+    font-family: "Yu Mincho";
+    line-height: 1.33;
+
+    @include md.tab {
+      margin-bottom: 2.9vw;
+    }
+
+    @include md.sp {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+  &__text {
+    margin-bottom: 47px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+
+    @include md.tab {
+      margin-bottom: 2.98vw;
+      font-size: 1.4rem;
+    }
+
+    @include md.sp {
+      color: #ffff;
+    }
+  }
+  &__caution-text {
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: "Yu Mincho";
+    line-height: 1.5;
+
+    @include md.tab {
+      font-size: 1.2rem;
+    }
+
+    @include md.sp {
+      color: #fff;
+    }
+  }
+
+  &--reverse {
+    .shift-img-media {
+      &__inner {
+        flex-direction: row-reverse;
+      }
+      &__body {
+        margin-right: -90px;
+        margin-left: 0;
+        padding-right: 160px;
+        padding-left: 60px;
+
+        @include md.sp {
+          margin: 0;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

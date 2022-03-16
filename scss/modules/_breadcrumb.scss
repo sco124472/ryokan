@@ -1,0 +1,37 @@
+@use "./../base/mediaquery" as md;
+.breadcrumb {
+  width: 100%;
+  margin-bottom: 92px;
+
+  @include md.sp {
+    margin-bottom: 40px;
+  }
+
+  &__top {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+  }
+  &__greater {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+  }
+  &__sub {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+  }
+}

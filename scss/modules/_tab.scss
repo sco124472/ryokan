@@ -1,0 +1,24 @@
+@use "./../base/mediaquery" as md;
+.tab {
+  display: flex;
+  justify-content: center;
+  &__item {
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 1;
+    cursor: pointer;
+    &--shop {
+      margin-right: 44px;
+      border-bottom: 1px solid #707070;
+    }
+    &--another {
+      margin-right: 20px;
+      margin-left: 10px;
+      border-width: 0;
+      border-bottom: 1px solid #707070;
+    }
+  }
+}

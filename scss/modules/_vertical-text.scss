@@ -1,0 +1,62 @@
+@use "./../base/mediaquery" as md;
+.vertical-text {
+  min-width: 23px;
+  margin-left: 22px;
+  color: #000;
+  letter-spacing: 0.38em;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: "Yu Mincho";
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  @include md.sp {
+    margin-left: 0;
+    font-size: 1.4rem;
+    white-space: normal;
+    line-height: 1.75;
+    writing-mode: horizontal-tb;
+  }
+
+  &--large {
+    min-width: 42px;
+    letter-spacing: 0.8em;
+    font-size: 2.8rem;
+
+    @include md.sp {
+      font-size: 2rem;
+    }
+  }
+
+  &--position-up {
+    position: relative;
+    top: -87px;
+
+    @include md.sp {
+      top: 0;
+      left: -30px;
+    }
+  }
+
+  &--position-bottom {
+    text-align: end;
+  }
+}
+
+.vertical-text-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+
+  @include md.sp {
+    flex-direction: column;
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & > *:last-child {
+    margin-left: 0;
+  }
+}

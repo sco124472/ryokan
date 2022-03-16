@@ -1,0 +1,12 @@
+.news {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__tab {
+    margin-bottom: 27px;
+  }
+}

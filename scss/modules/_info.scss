@@ -1,0 +1,48 @@
+@use "./../base/mediaquery" as md;
+.info {
+  display: flex;
+
+  @include md.tab {
+    align-items: center;
+  }
+
+  @include md.sp {
+    display: block;
+  }
+  &__img-wrapper {
+    width: 56%;
+    margin-right: 4vw;
+
+    @include md.sp {
+      width: 100%;
+    }
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__body {
+    flex: 1;
+    margin-top: 17px;
+
+    @include md.tab {
+      margin-top: 0;
+    }
+
+    @include md.sp {
+      padding: 10px;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 9px;
+    color: #000;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+  }
+}

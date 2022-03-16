@@ -1,0 +1,35 @@
+@use "./../base/mediaquery" as md;
+.content {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  &--sp-fullscreen {
+    @include md.sp {
+      max-width: 100%;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  &__lead {
+    overflow: hidden;
+    margin-bottom: 76px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+
+    @include md.sp {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+  &__map {
+    max-width: 792px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

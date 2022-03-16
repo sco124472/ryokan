@@ -1,0 +1,70 @@
+@use "./../base/mediaquery" as md;
+.card {
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-top: 56.25%;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+
+    object-fit: cover;
+  }
+  &__body {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: "Yu Mincho";
+    line-height: 1.6;
+  }
+  &__text {
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+    line-height: 2;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  &--col3 {
+    margin-bottom: -30px;
+
+    @include md.sp {
+      margin-bottom: -30px;
+    }
+
+    & > .cards {
+      &__item {
+        width: calc(33.33% - 22.6667px);
+        margin-right: 34px;
+        margin-bottom: 30px;
+
+        @include md.sp {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@use "./../base/mediaquery" as md;
+.half-media {
+  width: 100%;
+  &__inner {
+    position: relative;
+    height: calc(23.875rem + ((1vw - 7.68px) * 28.8779));
+
+    @include md.sp {
+      height: calc(25.625rem + ((1vw - 0.01px) * 14.3603));
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: calc(25.625rem + ((1vw - 0.01px) * 14.3603));
+        background: rgba(0, 0, 0, 0.5);
+        content: "";
+      }
+    }
+  }
+  &__img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+
+    @include md.sp {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(25.625rem + ((1vw - 0.01px) * 14.3603));
+    }
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+
+    @include md.sp {
+      height: calc(25.625rem + ((1vw - 0.01px) * 14.3603));
+    }
+  }
+  &__body {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(45% - 8.135vw);
+    margin-right: 2vw;
+    text-align: left;
+    transform: translateY(-50%);
+
+    @include md.sp {
+      top: 50%;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      margin: 0;
+      padding: 0 5vw;
+      transform: translateY(-50%);
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: calc(1.75rem + ((1vw - 7.68px) * 1.3201));
+    font-family: "Yu Mincho";
+    line-height: 2;
+
+    @include md.pc {
+      margin-bottom: 1.083vw;
+      line-height: 1.5;
+    }
+
+    @include md.sp {
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-size: calc(1.25rem + ((1vw - 3.3px) * 0.2424));
+    font-family: "Yu Mincho";
+    line-height: 1.7;
+
+    @include md.pc {
+      margin-bottom: 1.083vw;
+    }
+
+    @include md.sp {
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+  &.half-media--reverse {
+    .half-media {
+      &__img-wrapper {
+        left: 100%;
+        width: 55%;
+        transform: translateX(-100%);
+
+        @include md.sp {
+          width: 100%;
+        }
+      }
+      &__body {
+        left: 0;
+        width: calc(45% - 15.75vw);
+        margin-right: 5.25vw;
+        margin-left: 10.5vw;
+
+        @include md.sp {
+          width: 100%;
+          margin: 0;
+          padding: 0 5vw;
+        }
+      }
+    }
+  }
+}

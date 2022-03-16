@@ -1,0 +1,53 @@
+@use "./../base/mediaquery" as md;
+.about {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 100px;
+  padding-top: 59px;
+  padding-bottom: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include md.sp {
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 87px;
+    line-height: 1.5;
+    @include md.sp {
+      flex-direction: column;
+      padding-top: 0;
+      padding-left: 30px;
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title {
+    margin-left: 100px;
+    @include md.sp {
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+  &__paragraph {
+    margin-left: 88px;
+
+    @include md.tab {
+      margin-left: 5vw;
+    }
+    @include md.sp {
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+  &__text {
+    margin-left: 22px;
+    @include md.sp {
+      margin-left: 0;
+    }
+  }
+}

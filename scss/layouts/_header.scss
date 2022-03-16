@@ -1,0 +1,55 @@
+@use "./../base/mediaquery" as md;
+//下層ページへのmenu(お部屋、お料理、温泉）とハンバーガーメニューの切り替えにheader-hide,を使用する。767px以下でheader__menu-itemにhideクラスを付与する。768以上でハンバーガーメニューにhideを付与する
+
+.header {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    @include md.sp {
+      padding: 10px 10px;
+    }
+  }
+  &__left-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-wrapper {
+    margin-right: 6.25vw;
+  }
+
+  &__right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md.sp {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--lighter {
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+    .site-title {
+      &__title {
+        color: #000;
+      }
+    }
+    .horizontal-nav {
+      &__link {
+        color: #000;
+      }
+    }
+    .hamburger {
+      &__line {
+        background-color: #000;
+      }
+    }
+  }
+}

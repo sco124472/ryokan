@@ -1,0 +1,63 @@
+@use "./../base/mediaquery" as md;
+.footer {
+  width: 100%;
+  padding-top: 60px;
+  &__inner {
+    padding-bottom: 60px;
+
+    @include md.sp {
+      padding-bottom: 30px;
+    }
+  }
+  &__vertical-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 93px;
+
+    @include md.sp {
+      margin-bottom: 40px;
+    }
+  }
+  &__title {
+    margin-bottom: 65px;
+    text-align: center;
+
+    @include md.sp {
+      margin-bottom: 30px;
+    }
+  }
+  &__text-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+  &__text {
+    margin-right: 16px;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "Yu Mincho";
+  }
+
+  &__telephone-head {
+    margin-right: 21px;
+  }
+  &__copy-right-wrapper {
+    background-color: #000;
+  }
+  &__copy-right {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: "Yu Mincho";
+    line-height: 5;
+  }
+}

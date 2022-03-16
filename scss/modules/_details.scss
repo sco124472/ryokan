@@ -1,0 +1,20 @@
+@use "./../base/mediaquery" as md;
+.details {
+  margin-bottom: 150px;
+  overflow: hidden;
+
+  @include md.sp {
+    margin-bottom: 30px;
+  }
+
+  & > * {
+    margin-bottom: 84px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include md.sp {
+      margin-bottom: 0;
+    }
+  }
+}

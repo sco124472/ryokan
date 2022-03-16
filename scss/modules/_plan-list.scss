@@ -1,0 +1,16 @@
+@use "./../base/mediaquery" as md;
+.plan-list {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 142px;
+  background-size: cover;
+
+  @include md.sp {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+}

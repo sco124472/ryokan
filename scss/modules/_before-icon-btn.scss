@@ -1,0 +1,37 @@
+@use "./../base/mediaquery" as md;
+.before-icon-btn {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 170px;
+  padding: 0.3rem 0.5rem;
+  border: 0;
+  background-color: #978f10;
+  color: #f5f5f5;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.6rem;
+  font-family: "Yu Mincho";
+  line-height: 3;
+  appearance: none;
+
+  @include md.sp {
+    width: 100px;
+    font-size: 1.2rem;
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &::before {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+  }
+  &.before-icon-btn--download {
+    &::before {
+      content: "\f073";
+    }
+  }
+}
